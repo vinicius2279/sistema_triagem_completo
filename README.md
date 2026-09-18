@@ -1,4 +1,6 @@
-# Sistema Completo de Triagem utilizando Java e MySQL
+# Sistema Completo de Triagem
+
+Sistema desktop completo desenvolvido em Java e interface gráfica com JavaFX utilizando o padrão MVC, DAO pattern e CRUD completo em MySQL.
 
 ## Tecnologias utilizadas
 
