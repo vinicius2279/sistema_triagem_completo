@@ -1,0 +1,13 @@
+target/
+
+.idea/
+*.iml
+
+*.log
+
+# arquivos locais / temporários
+*.tmp
+
+# credenciais ou configs locais
+.env
+application.properties

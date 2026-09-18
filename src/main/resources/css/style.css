@@ -1,0 +1,49 @@
+.table-row-cell:odd {
+    -fx-background-color: white;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f2f2f2;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b7dfff;
+}
+
+.linha-vermelha .table-cell {
+    -fx-background-color: #ffcccc;
+}
+
+.linha-amarela .table-cell {
+    -fx-background-color: #fff3b0;
+}
+
+.linha-verde .table-cell {
+    -fx-background-color: #d9f7d9;
+}
+
+.linha-azul .table-cell {
+    -fx-background-color: #dbeafe;
+}
+
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+.label {
+    -fx-font-family: "Segoe UI";
+}
+
+.button {
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: 600;
+}
+
+.table-view {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: 600;
+}

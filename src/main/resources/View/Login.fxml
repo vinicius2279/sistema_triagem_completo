@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginViewController">
+    <Button layoutX="41.0" layoutY="286.0" onAction="#loginAtendente" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #00FF7F;" text="Iniciar Atendimento" textAlignment="CENTER">
+      <font>
+         <Font name="Segoe UI" size="12.0" />
+      </font>
+      <effect>
+         <Lighting bumpInput="$null">
+            <light>
+               <Light.Distant />
+            </light>
+         </Lighting>
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Label layoutY="27.0" prefHeight="82.0" prefWidth="289.0" style="-fx-background-color: white;" text="   EASY TRIAGE" textAlignment="CENTER">
+      <font>
+         <Font name="Segoe UI Black" size="36.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="275.0" fitWidth="280.0" layoutX="586.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@medical_symbol_snake_24097610.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="781.0" layoutY="762.0" text="Developed by Vinícius C.">
+      <font>
+         <Font name="Arial" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="617.0" layoutY="276.0" prefHeight="20.0" prefWidth="230.0" text="Soluções Inteligentes para Triagem">
+      <font>
+         <Font name="Segoe UI" size="14.0" />
+      </font></Label>
+    <Button layoutX="41.0" layoutY="336.0" onAction="#loginAdmin" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: #00FF7F;" text="Entrar como Administrador" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="12.0" />
+      </font>
+      <effect>
+         <Lighting>
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+            <light>
+               <Light.Distant />
+            </light>
+         </Lighting>
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+    <TextField fx:id="campoSenha" layoutX="45.0" layoutY="225.0" prefHeight="35.0" prefWidth="167.0" promptText="Senha" />
+    <TextField fx:id="campoMatricula" layoutX="45.0" layoutY="178.0" prefHeight="35.0" prefWidth="167.0" promptText="Matrícula" />
+   <Label layoutX="53.0" layoutY="125.0" prefHeight="27.0" prefWidth="158.0" text="Acesso ao Sistema">
+      <font>
+         <Font name="Segoe UI" size="18.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="20.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@profile_avatar.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

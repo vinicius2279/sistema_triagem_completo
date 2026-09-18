@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="747.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MenuViewController">
+
+    <Label layoutX="117.0" layoutY="29.0" prefHeight="62.0" prefWidth="390.0" text="EASY TRIAGE - ATENDIMENTOS">
+
+        <font>
+            <Font name="Segoe UI" size="26.0" />
+        </font>
+
+    </Label>
+
+    <ImageView fitHeight="90.0" fitWidth="93.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+
+        <image>
+            <Image url="@medical_symbol_snake_24097610.png" />
+        </image>
+
+    </ImageView>
+
+    <Button layoutX="844.0" layoutY="39.0" onAction="#voltarMenu" prefHeight="26.0" prefWidth="67.0" text="Voltar" />
+
+    <Pane layoutX="2.0" layoutY="171.0" prefHeight="51.0" prefWidth="948.0" style="-fx-background-color: #87CEFA;" stylesheets="@../css/style.css">
+
+        <children>
+
+            <Button layoutX="180.0" layoutY="7.0" onAction="#novoAtendimentoFX" prefHeight="36.0" prefWidth="200.0" text="Novo Atendimento">
+
+                <font>
+                    <Font size="16.0" />
+                </font>
+
+            </Button>
+
+
+            <Button layoutX="560.0" layoutY="7.0" onAction="#finalizarAtendimento" prefHeight="36.0" prefWidth="200.0" text="Atender Paciente">
+
+                <font>
+                    <Font size="16.0" />
+                </font>
+
+            </Button>
+
+        </children>
+
+    </Pane>
+
+    <Label layoutX="15.0" layoutY="235.0" text="Fila de Atendimentos">
+
+        <font>
+            <Font size="18.0" />
+        </font>
+
+    </Label>
+
+
+    <TableView fx:id="tableAguardando" layoutX="15.0" layoutY="265.0" prefHeight="200.0" prefWidth="922.0" stylesheets="@../css/style.css">
+
+        <columns>
+
+            <TableColumn fx:id="colunaPacienteAguardando" prefWidth="175.0" text="Paciente" />
+
+            <TableColumn fx:id="colunaFuncionarioAguardando" prefWidth="150.0" text="Funcionário" />
+
+            <TableColumn fx:id="colunaClassificacaoAguardando" prefWidth="125.0" text="Classificação" />
+
+            <TableColumn fx:id="colunaDataAguardando" prefWidth="135.0" text="Data" />
+
+            <TableColumn fx:id="colunaSintomasAguardando" prefWidth="210.0" text="Sintomas" />
+
+            <TableColumn fx:id="colunaStatusAguardando" prefWidth="120.0" text="Status" />
+
+        </columns>
+
+    </TableView>
+
+    <Label layoutX="15.0" layoutY="480.0" text="Atendimentos Finalizados">
+
+        <font>
+            <Font size="18.0" />
+        </font>
+
+    </Label>
+
+
+    <TableView fx:id="tableFinalizados" layoutX="15.0" layoutY="510.0" prefHeight="220.0" prefWidth="922.0" stylesheets="@../css/style.css">
+
+        <columns>
+
+            <TableColumn fx:id="colunaPacienteFinalizados" prefWidth="175.0" text="Paciente" />
+
+            <TableColumn fx:id="colunaFuncionarioFinalizados" prefWidth="150.0" text="Funcionário" />
+
+            <TableColumn fx:id="colunaClassificacaoFinalizados" prefWidth="125.0" text="Classificação" />
+
+            <TableColumn fx:id="colunaDataFinalizados" prefWidth="135.0" text="Data" />
+
+            <TableColumn fx:id="colunaSintomasFinalizados" prefWidth="210.0" text="Sintomas" />
+
+            <TableColumn fx:id="colunaStatusFinalizados" prefWidth="120.0" text="Status" />
+
+        </columns>
+
+    </TableView>
+
+</AnchorPane>
